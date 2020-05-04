@@ -1,0 +1,15 @@
+---
+# tasks file for helm-install
+
+- name: Install Helm Chart
+  helm:
+    host: localhost
+    chart:
+      name: "minecraft"
+      source:
+        type: repo
+        location: https://kubernetes-charts.storage.googleapis.com
+    state: present
+    name: "mionecraft"
+    namespace: '{{ namespace }}'
+

@@ -1,0 +1,2 @@
+namespace: ansible
+helm_chart: 'kafka-manager'
